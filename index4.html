@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Album Art Maker</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+  <div id="mySideNav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="index.html">Home</a>
+    <a href="index2.html">About the Band</a>
+    <a href="index3.html">Music</a>
+    <a href="index4.html">Create Album Art</a>
+    <a href="index5.html">T-shirt Design</a>
+  </div>
+
+  <div class="container" onclick="openNav();">
+      <div class="bar1"></div>
+      <div class="bar2"></div>
+      <div class="bar3"></div>
+  </div>
+
+  <div class="caption2">
+    <span class="border">Create your own</span>
+  </div>
+  <div class="caption3">
+    <span class="border">Album Cover!</span>
+  </div>
+  <div id="frame">
+    <canvas width='400' height='400' id="masterpiece"></canvas>
+  </div>
+  <div id="plaque">
+    <label id="plaqueLabel">Create your album:</label>
+    <div id="params">
+      <select name="" id="dropdown">
+        <option value="diagonal">Diagonals</option>
+        <option value="halfArc">Half Arc</option>
+        <option value="orthogonals">Orthogonals</option>
+        <option value="quarterArc">Quarter Arc</option>        
+      </select>
+
+      <div class="checkbox">
+        <input type="checkbox" value="1" id="checkboxInput" name=""/>
+        <label for="checkboxInput">Colour</label>        
+      </div>
+      <a id="Save" class="savebutton">Save</a>
+    </div>
+  </div>
+  <p id="instructions">Tap anywhere on the screen to add more lines</p>
+
+  <div class="footer">
+    <a href="https://www.facebook.com/VampireWeekend/" class="fa fa-facebook"></a>
+    <a href="https://twitter.com/vampireweekend" class="fa fa-twitter"></a>
+    <a href="https://www.instagram.com/vampireweekend/" class="fa fa-instagram"></a>
+    <a href="https://itunes.apple.com/gb/artist/vampire-weekend/259437105?app=music&ign-mpt=uo%3D4" class="fa fa-apple"></a>
+    <a href="http://smarturl.it/spotifyvwcom" class="fa fa-spotify"></a>
+    <a href="http://smarturl.it/youtubevwcom" class="fa fa-youtube"></a>
+    <a href=http://smarturl.it/vampireweekend" class="fa fa-shopping-basket"></a>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

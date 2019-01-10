@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>T-shirt Design</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+    <div id="mySideNav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="index.html">Home</a>
+        <a href="index2.html">About the Band</a>
+        <a href="index3.html">Music</a>
+        <a href="index4.html">Customizer</a>
+        <a href="test.html">Customizer 2.0</a>
+    </div>
+
+    <div class="container" onclick="openNav();">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+    </div>
+
+    <div class="caption3">
+        <span class="border">Tshirt Design</span>
+        <p>Add your own photo</p>
+        <p>Edit the text</p>
+        <p>Drag the objects to the t-shirt</p>
+    </div>
+
+    <div id="imagecontainer">
+        <img id="tshirt" src="assets/tshirt.jpeg" width="417" height="446">
+        <div id="div5" ondrop="drop(event)" ondragover="allowDrop(event)">
+        </div>   
+    </div>
+    <div id="div4" ondrop="drop(event)" ondragover="allowDrop(event)">
+       <!--  <img id="drag1" src="assets/chris_baio.jpg" draggable="true" ondragstart="drag(event)" height="100" width="100">
+        <img id="drag2" src="assets/chris_tomson.jpg" draggable="true" ondragstart="drag(event)" width=100" height=100">
+        <img id="drag3" src="assets/diane_young.jpg" draggable="true" ondragstart="drag(event)" width=100" height=100">
+        <img id="drag4" src="assets/ladies_of_cambridge.jpg" draggable="true" ondragstart="drag(event)" width=100" height=100">
+        <img id="drag5" src="assets/rostam_batmanglij.jpg" draggable="true" ondragstart="drag(event)" width=100" height=100">
+        <img id="drag6" src="assets/ezra_koeing.jpg" draggable="true" ondragstart="drag(event)" width=100" height=100">
+        <img id="drag7" src="assets/jonathan_low.jpg" draggable="true" ondragstart="drag(event)" width=100" height=100">
+        <img id="drag8" src="assets/modern_vampires.jpg" draggable="true" ondragstart="drag(event)" width=100" height=100">
+        <img id="drag9" src="assets/unbelievers.jpg" draggable="true" ondragstart="drag(event)" width=100" height=100">
+        <img id="drag10" src="assets/white_sky.jpg" draggable="true" ondragstart="drag(event)" width=100" height=100">
+        <img id="drag11" src="assets/california_english.jpg" draggable="true" ondragstart="drag(event)" width=100" height=100">
+        <img id="drag13" src="assets/vampire_weekend.jpg" draggable="true" ondragstart="drag(event)" width=100" height=100">
+        <img id="drag14" src="assets/contra.jpg" draggable="true" ondragstart="drag(event)" width=100" height=100">
+        <img id="drag15" src="assets/vampire_weekend_2.jpg" draggable="true" ondragstart="drag(event)" width="168" height=100"> -->
+        <input type="file" onchange="document.getElementById('output').src = window.URL.createObjectURL(this.files[0])" >
+        <img id="output" alt="your image" draggable="true" ondragstart="drag(event)" width="200" height="200"/>
+        <div id="drag12" class="title1" draggable="true" ondragstart="drag(event)">
+            <div contenteditable>Edit Text!</div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <a href="https://www.facebook.com/VampireWeekend/" class="fa fa-facebook"></a>
+        <a href="https://twitter.com/vampireweekend" class="fa fa-twitter"></a>
+        <a href="https://www.instagram.com/vampireweekend/" class="fa fa-instagram"></a>
+        <a href="https://itunes.apple.com/gb/artist/vampire-weekend/259437105?app=music&ign-mpt=uo%3D4" class="fa fa-apple"></a>
+        <a href="http://smarturl.it/spotifyvwcom" class="fa fa-spotify"></a>
+        <a href="http://smarturl.it/youtubevwcom" class="fa fa-youtube"></a>
+        <a href=http://smarturl.it/vampireweekend" class="fa fa-shopping-basket"></a>
+    </div>
+
+<script src="https://code.jquery.com/jquery-1.7.2.min.js" integrity="sha256-R7aNzoy2gFrVs+pNJ6+SokH04ppcEqJ0yFLkNGoFALQ=" crossorigin="anonymous"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
+    

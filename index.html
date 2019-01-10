@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Vampire Weekend</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	
+	<div id="mySideNav" class="sidenav">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		<a href="index.html">Home</a>
+		<a href="index2.html">About the Band</a>
+		<a href="index3.html">Music</a>
+		<a href="index4.html">Create Album Art</a>
+		<a href="index5.html">T-shirt Design</a>
+	</div>
+
+	<div id="overlay" onclick="off()">
+  		<div style="padding:20px" id="overlaytext">
+  			<h1>VAMPIRE WEEKEND</h1>
+  			<p> Press anywhere to continue</p>
+		</div>
+	</div>
+	<div id="container">
+		<video loop autoplay="autoplay" id="MainVideo" muted plays-inline> <source src="assets/giving-up-the-gun.mp4" type="video/mp4"></video>
+	</div>
+
+	<div class="container" onclick="openNav();">
+  		<div class="bar1"></div>
+  		<div class="bar2"></div>
+   		<div class="bar3"></div>
+	</div>
+	
+	<div class="footer">
+		<a href="https://www.facebook.com/VampireWeekend/" class="fa fa-facebook"></a>
+		<a href="https://twitter.com/vampireweekend" class="fa fa-twitter"></a>
+		<a href="https://www.instagram.com/vampireweekend/" class="fa fa-instagram"></a>
+		<a href="https://itunes.apple.com/gb/artist/vampire-weekend/259437105?app=music&ign-mpt=uo%3D4" class="fa fa-apple"></a>
+		<a href="http://smarturl.it/spotifyvwcom" class="fa fa-spotify"></a>
+		<a href="http://smarturl.it/youtubevwcom" class="fa fa-youtube"></a>
+		<a href=http://smarturl.it/vampireweekend" class="fa fa-shopping-basket"></a>
+	</div>
+
+	<script src="js/main.js"></script>
+</body>
+</html>

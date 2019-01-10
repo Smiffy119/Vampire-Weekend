@@ -1,0 +1,684 @@
+/*Colours: Purple: #712D6A Blue: #6FCEEA  Yellow: #FFE040 Green: #92D4D3*/
+
+html{
+  font: 62.5%;
+  height: 100%;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  min-width: 500px;
+}
+
+h1,
+span,
+tr{
+  font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+  /*font-size: 24px;*/
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+  /*line-height: 26.4px;*/
+} 
+
+h3{
+  font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 450;
+} 
+
+p,
+label,
+button,
+div,{ 
+  font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+}
+
+div{
+  display: block;
+}
+
+.sidenav{
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: 0.5s; 
+}
+
+.sidenav a{
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 1.56rem; /* 25px */
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+  font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+}
+
+.sidenav a:hover{
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn{
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 2.25rem; /* 36px */
+  margin-left: 50px;
+}
+
+.container{
+  display: inline-block;
+  cursor: pointer;
+}
+
+.bar1, .bar2, .bar3{
+  width: 35px;
+  height: 5px;
+  background-color: #6FCEEA;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+video { 
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  transform: translateX(-50%) translateY(-50%);
+  background-size: cover;
+  transition: 1s opacity;
+  background-color: white;
+}
+
+
+#overlay{
+  position: fixed;
+  display: block;
+  width: 100%
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.80);
+  z-index: 2;
+  cursor: pointer;
+}
+
+#overlaytext{
+  text-align: center;
+  font-size: 2.5rem;
+  position: absolute;
+  color: #712D6A;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); 
+  -ms-transform: translate(-50%, -50%);
+}
+
+.bgimg1{
+  background-image: url('../assets/vampire_weekend_2.jpg');
+  height: 75%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bgimg2{
+  background-image: url('../assets/vampire_weekend_1.jpg');
+  height: 75%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bgimg3{
+  background-image: url('../assets/vampire_weekend_5.jpg');
+  height: 75%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bgimg4{
+  background-image: url('../assets/ezra_koenig_singing.jpg');
+  height: 75%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bgimg5{
+  background-image: url('../assets/vampire_weekend_3.jpg');
+  height: 75%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bgimg6{
+  background-image: url('../assets/vampire_weekend_7.jpg');
+  height: 75%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bgimg7{
+  background-image: url('../assets/vampire_weekend_9.jpg');
+  height: 75%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bgimg8{
+  background-image: url('../assets/vampire_weekend_11.jpeg');
+  height: 75%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bgimg9{
+  background-image: url('../assets/vampire_weekend_12.jpg');
+  height: 75%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bgimg10{
+  background-image: url('../assets/vampire_weekend_red_rocks.jpg');
+  height: 75%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.caption{
+  position: absolute;
+  left: 0;
+  top: 35%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+
+.caption1{
+  position: absolute;
+  left: 75%;
+  top: 10%
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+
+.caption2{
+  position: absolute;
+  left: 4%;
+  top: 10%
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+
+.caption3{
+  position: absolute;
+  left: 70%;
+  top: 10%
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+
+.caption4{
+  text-align: center;
+}
+
+.caption span.border,
+.caption1 span.border{
+  background-color: #111;
+  color: #fff;
+  padding: 18px;
+  font-size: 2.5rem;
+  letter-spacing: 10px;
+}
+
+.caption2 span.border,
+.caption3 span.border,
+.caption4 span.border{
+  background-color: #111;
+  color: #fff;
+  padding: 18px;
+  font-size: 2rem;
+  letter-spacing: 10px;
+}
+
+.div1{
+/*  height: 100px;*/
+  background-color: white;
+  font-size: 1.5rem;
+  font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.div1 h3{
+  text-align: center;
+}
+
+.div2,
+.div3{
+/*  height: 100px;*/
+  text-align: center;
+  background-color: white;
+  font-size: 3.6rem;
+  font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 23%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container1 {
+  padding: 0 16px;
+}
+
+.container1::after, .row1::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+#whitespace{
+  color: white;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: white;
+}
+
+td a{
+  background-color: #000;
+  padding: 4px;
+  color: white;
+  text-decoration: none;
+}
+
+#table1{
+  overflow-x: auto;
+}
+
+#masterpiece{
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+#frame{
+  margin-top: 30px;
+  margin-left: 20px;
+  border: 25px solid white;
+  outline-style: solid;
+  outline-color: black;
+  box-shadow: 10px 10px 20px black, 0px 0px 4px 1px #ccc inset;
+  width: 420px;
+  height: 420px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#plaqueLabel{
+  color: #FFE040;
+}
+
+#params{
+  padding-top: 4px;
+}
+
+#plaque{
+  user-select: none;
+  text-align: center;
+  margin-top: 40px;
+  margin-left: 10px;
+  width: 400px;
+  height: 55px;
+  /*border: 4px solid #FFE040;*/
+  box-shadow: 3px 3px 10px -2px black;
+  background-color: black;
+  padding: 6px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#instructions{
+  text-align: center;
+}
+
+#dropdown{
+  width: 150px;
+  background-color: #333;
+  border: none;
+  color: #FFE040;
+  border-radius: 0px;
+  font-size: 0.8125rem; /* 13px */
+  -webkit-appearance: none;
+  appearance: none;
+  padding: 7px;
+  border-radius: 25px;
+
+  background-image: url("data:image/svg+xml;utf8,<svg fill='white' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+  background-repeat: no-repeat;
+  background-position-x: 100%;
+  background-position-y: 5px;
+}
+
+.checkbox{
+  display: -webkit-inline-box;
+  width: 90px;
+  height: 30px;
+  background: #333;
+  border-radius: 50px;
+  position: relative;
+  top: -5px;
+}
+
+#checkboxInput{
+  appearance: none !important;
+  -webkit-appearance: none !important;
+}
+
+.checkbox:before,
+.checkbox:after{
+  position: absolute;
+  top: 8px;
+  height: 2px;
+  color: #FFE040;
+  font-size: 0.8125rem;
+}
+
+.checkbox:before{
+  content: "On";
+  left: 13px;
+}
+
+.checkbox:after{
+  content: "Off";
+  left: 60px;
+}
+
+.checkbox label {
+  display: block;
+  width: 50px;
+  height: 22px;
+  border-radius: 50px;
+  transition: all 0.5s ease;
+  cursor: pointer;
+  position: absolute;
+  top: 4px;
+  z-index: 1;
+  left: 7px;
+  background: #FFE040;
+  color: black;
+  font-size: 0.8125rem;
+  text-align: center;
+  line-height: 1.8em;
+}
+
+/**
+ * Create the checkbox event for the label
+ */
+.checkbox input[type="checkbox"]:checked + label {
+  left: 35px;
+  background: #FFE040;
+}
+
+.savebutton {
+  text-decoration: none;
+  background-color: #333;
+  color: #FFE040;
+  padding: 2px 6px 2px 6px;
+  border-top: 1px solid #333;
+  border-right: 1px solid #333;
+  border-bottom: 1px solid #333;
+  border-left: 1px solid #333;
+}
+
+#div5 {
+  width: 200px;
+  height: 320px;
+  padding: 10px;
+  /*border: 1px solid #aaaaaa;*/
+  position: absolute;
+  top: 75px;
+  left: 98px;
+}
+
+#div4 {
+  width: 450px;
+  height: 75px;
+  padding: 10px;
+  border: 1px solid #aaaaaa;
+  position: absolute;
+  left:20%;
+  text-align: center;
+}
+
+#imagecontainer {
+  position: relative; 
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%   
+}
+
+.title1{
+  margin-right: auto;
+  margin-left: auto;
+  font-size: 1.55rem;
+  width: 200px;
+  height: 30px;
+  text-align: center;
+}
+
+.footer{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: black;
+  /*opacity: 0.65;*/
+  color: white;
+  text-align: center;
+}
+
+.fa{
+  padding: 20px;
+  font-size: 2.5rem /* 40px */
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+
+.fa:hover{
+  opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #000;
+  color: white;
+}
+
+.fa-twitter {
+  background: #000;
+  color: white;
+}
+
+.fa-youtube {
+  background: #000;
+  color: white;
+}
+
+.fa-instagram {
+  background: #000;
+  color: white;
+}
+
+.fa-apple{
+  background: #000;
+  color: white;
+}
+
+.fa-spotify{
+  background: #000;
+  color: white;
+}
+
+.fa-shopping-basket{
+  background: #000;
+  color: white;
+}
+
+
+@media only screen and (max-height: 450px){
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 1.12rem} /* 18px */
+}
+
+@media only screen and (max-device-width: 800px) {
+  .bgimg1, .bgimg2, .bgimg3, .bgimg4, .bgimg5, .bgimg6, .bgimg7, .bgimg8, .bgimg9, .bgimg10, .bgimg11{
+    background-attachment: scroll;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  .caption1{
+    position: absolute;
+    left: 65%;
+    top: 10%
+    width: 100%;
+    text-align: center;
+    color: #000;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .caption1{
+    position: absolute;
+    left: 50%;
+    top: 10%
+    width: 100%;
+    text-align: center;
+    color: #000;
+  }
+  .row2{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+
+  .column2{
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+  }
+
+  .column2 img{
+    margin-top: 8px;
+    vertical-align: middle;
+  }
+
+  .row{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1025px){
+  .div3{
+    display: none;
+  }
+  .column{
+    width: 23%;
+  }
+  table{
+    width: 90%
+  }
+  .caption1{
+    left:70%;
+  }
+  .caption3{
+    left: 60%;
+  }
+  .caption1 span.border,
+  .caption2 span.border,
+  .caption3 span.border,
+  .caption4 span.border{
+    font-size: 1.75rem;
+    padding: 10px;
+  }
+}
